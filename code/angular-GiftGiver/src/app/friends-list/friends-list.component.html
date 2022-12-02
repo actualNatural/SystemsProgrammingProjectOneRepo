@@ -1,0 +1,41 @@
+<div id=homePage>
+<h2 id=yourFriends>Your Friends</h2>
+
+<div  *ngFor="let friends of friends!">
+  <h3>
+    <a id=friendsList [title]="friends.name" >  
+      {{ friends.name }}
+    </a>
+  </h3>
+  <button type="button" [routerLink]="['/products','friends.id']">See Wishlist</button>
+</div>
+
+
+<h2 id=yourFriends>Your Wishlist</h2>
+
+
+  <div *ngFor="let wishlist of wishlist!">
+  <div *ngIf="wishlist && wishlist.name; else notfound">
+  <a [title]="wishlist.name" >
+    {{wishlist.name}}
+  </a>
+  
+  </div>
+</div>
+<ng-template #notfound>
+  <div>
+    <h2 id=warningMessage>You do not have a wishlist yet! Click below to create one</h2>
+    <button id=createWishlist>Create Wishlist</button>
+  </div>
+  
+</ng-template>
+</div>
+
+
+
+
+  
+
+  
+
+

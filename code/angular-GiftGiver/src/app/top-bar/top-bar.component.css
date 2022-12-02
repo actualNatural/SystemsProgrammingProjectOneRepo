@@ -1,0 +1,17 @@
+
+#top-bar-text {
+  
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  
+  
+}
+
+
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/
